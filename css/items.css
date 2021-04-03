@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: #d2bddd;
+    
+}
+
+.cards{
+    width: 100%;
+    height: auto;
+}
+
+.card{
+    margin: 6%;
+    transition: all 0.4s cubic-bezier(0.175,0.885,0,1);
+    background-color: #fff;
+    width: 21.25%;
+    border-radius: 12px;
+    box-shadow: 0px 13px 10px -7px rgba(0, 0, 0, 0.1);
+    float: left;
+}
+
+.card:hover{
+    box-shadow: 0px 30px 18px -8px rgba(0, 0, 0, 0.1);
+    transform: scale(1.05,1.05);
+}
+
+.card__img{
+    width: 100%;
+    height: 235px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.card__info{
+    background-color: #fff;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    padding: 16px 24px 24px 24px;
+    text-align: center;
+    
+}
+
+.card__category{
+    font-family: "Raleway",sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: #868686;
+    background-color: #fff;
+}
+
+.card__title{
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: black;
+    background-color: #fff;
+    margin: 2px;
+}
+#Button{
+    color: #868686;
+    background-color: #fff;
+}
+
+button{
+    padding: 5px 8px;
+    font-family: "Raleway",sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: 15px;
+    color: #868686;
+    background-color: #fff;
+    outline: none;
+    border: 1px solid black;
+    cursor: pointer;
+    margin-top: 4px ;
+}
+
+@media (min-width:510px) and (max-width:831px){
+    .card{
+        float: none;
+        margin: 5%;
+        width: 80%;
+    }
+    .cards{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
+@media (max-width:510px){
+    .card{
+        float: none;
+        margin: 5%;
+        width: 70%;
+    }
+    .cards{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
